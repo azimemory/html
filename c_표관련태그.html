@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		표를 만드는 태그로는 table, th, tr, td 가 있다.
+		table: 기본적인 표를 생성하는 태그
+		th : 표의 제목 셀을 나타내는 태그
+		tr : 표의 행을 나타내는 태그
+		td : 표의 일반 셀을 나타내는 태그
+	 -->
+	<h1>1. 기본 테이블 생성</h1>
+	<table border="1">
+		<!-- 테이블에 제목을 달 때 사용하는 caption태그 -->
+		<caption><b>웹 브라우저의 종류</b></caption>
+		<tr>
+			<th>브라우저명</th><th>제조사</th><th>홈페이지</th>
+		</tr>
+		<tr>
+			<td>explore</td><td>MS</td><td>https://www.microsoft.com</td>
+		</tr>
+		<tr>
+			<td>edge</td><td>MS</td><td>https://www.microsoft.com</td>
+		</tr>
+		<tr>
+			<td>chrome</td><td>google</td><td>https://www.google.com</td>
+		</tr>
+		<tr>
+			<td>firefox</td><td>mozila</td><td>https://www.mozila.org</td>
+		</tr>
+	</table>
+	
+	
+	<h1>2. 셀 병합</h1>
+	<!-- 
+		colspan: 열을 합칠 때 사용
+		rowspan: 행을 합칠 때 사용
+	 -->
+	 <table border="1">
+	 	<tr>
+	 		<td colspan="2" rowspan="2" width="100px" height="150px">사진</td>
+	 		<td width="50px">이름</td>
+	 		<td width="150px"></td>
+	 	</tr>
+	 	<tr>
+	 		<td>연락처</td>
+	 		<td></td>
+	 	</tr>
+	 	<tr>
+	 		<td>주소</td>
+	 		<td colspan="3"></td>
+	 	</tr>
+	 	<tr>
+	 		<td>자기소개</td>
+	 		<td colspan="3"></td>
+	 	</tr>
+	 </table>
+	 
+	 <h1>3. 테이블 태그의 구조를 설정</h1>
+	 <!-- 
+		thead: 제목 컬럼을 작성하는 구역	
+		tbody: 일반 컬럼을 작성하는 구역
+		tfoot: footer contents를 작성하는 구역	 
+	  -->
+	 <table border="1">
+	 	<thead>
+		 	<tr>
+		 		<th>이름</th>
+		 		<th>나이</th>
+		 		<th>주소</th>
+		 	</tr>
+	 	</thead>
+	 	<tbody>
+		 	<tr>
+		 		<td>하명도</td>
+		 		<td>20</td>
+		 		<td>경기도 남양주시 지금동</td>
+		 	</tr>
+		 	<tr>
+		 		<td>박준범</td>
+		 		<td>16</td>
+		 		<td>경기도 남양주시 지금동</td>
+		 	</tr>
+		 	<tr>
+		 		<td>천지영</td>
+		 		<td>15</td>
+		 		<td>경기도 남양주시 지금동</td>
+		 	</tr>
+		 </tbody>
+		 <tfoot>
+		 	<tr>
+		 		<td colspan="2">총 인원</td>
+		 		<td></td>
+		 	</tr>
+		 </tfoot>
+	 </table>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+</body>
+</html>

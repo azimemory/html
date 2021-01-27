@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지관련태그</title>
+</head>
+<body>
+	<!-- 
+		이미지를 삽입하기 위해 <img>태그를 사용
+		src 속성에 이미지 경로를 속성값으로 넣어주면 브라우저 해당 이미지를 화면에 그려줍니다.
+		<img> 태그는 빈 태그(empty tag) 이다. 	
+	-->
+	
+	<h1>이미지 관련 태그</h1>
+	<img src="sample/image/city1.PNG">
+	
+	
+	<h2>자주 사용하는 속성</h2>
+	<h3>alt 속성</h3>
+	<pre>
+		사진의 경로가 잘못되었거나, 이미지를 제대로 표현할 수 없는 경우 표시할 대체 텍스트를 작성
+		Screen Reader는 이미지를 읽을 수 없기 때문에 Screen Reader가 읽을 이미지의 설명을 작성
+	</pre>
+	<img src="https://cdn.mediasr.co.kr/news/photo/201908/54238_17054_5026.jpg" width="300px" height="350px" alt="welcome to the jungle">
+	
+	<h3>width와 height</h3>
+	<img src="sample/image/flower1.PNG" width="200px" height="150px">
+	<img src="sample/image/flower2.PNG" width="200px" height="150px">
+	<img src="sample/image/flower3.PNG" width="200px" height="150px">
+	<img src="sample/image/flower4.PNG" width="200px" height="150px">
+	<img src="sample/image/flower5.PNG" width="200px" height="150px">
+	
+	<h3>usemap 속성</h3>
+	<p>이미지 구역을 나누어 각 구역에 원하는 링크를 설정, map태그와 area태그를 활용</p>
+	
+	<!-- 바인드할 map 태그의 # + name 속성값 -->
+	<img src="sample/image/river1.PNG" usemap="#map" width="600px" height="500px">
+	
+	<map name="map">
+		<!--
+			구역을 나누어 링크를 걸기 위해 area 태그 사용
+			shape 속성, coords 속성, href 속성
+			1) shape  : 구역을 나눌 때 구역의 모양(사각형, 원, 다각형)
+			2) coords : 각 구역의 영역을 지정하기 위한 좌표
+			3) href : hypertext refernece (링크)
+		  -->
+		  <area shape="rect" coords="0,0,300,500" href="https://www.naver.com">
+		  <area shape="rect" coords="300,0,600,500" href="https://www.google.com">
+	</map>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+</body>
+</html>

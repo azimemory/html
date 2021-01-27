@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+		링크 기능은 웹문서가 다른 문서 구분되는 가장 핵심적인 기능
+		클릭을 통해 다른 문서로 이동하거나, 또는 페이지 내에서 다른 위치로 이동할 수 있다.
+	 -->
+	 
+	 <h1 id="list_1">HTML Index</h1>
+	 <h2>목차</h2>
+	 <ol type="i" id="list_1">
+	 	<li><a href="a_글자관련태그.html">글자 관련 태그</a></li>
+	 	<li><a href="b_목록관련태그.html">목록 관련 태그</a></li>
+	 	<li><a href="c_표관련태그.html">표 관련 태그</a></li>
+	 	<li><a href="d_영역관련태그.html">영역 관련 태그</a></li>
+	 	<li><a href="e_이미지관련태그.html">이미지 관련 태그</a></li>
+	 	<li><a href="f_미디어관련태그.html">미디어 관련 태그</a></li>
+	 	<li>FORM 관련 태그</li>
+	 </ol>
+	 
+	 <hr>
+	 
+	 <h2>자주 사용하는 속성</h2>
+	 <h3>target 속성 사용 해 보기</h3>
+	 <!-- 
+	  target: 링크를 클릭했을 때 문서가 열릴 위치를 지정
+	 	 _blank: 새로운 윈도우 또는 탭에서 창을 연다.
+	 	 _self: 현재 창에서 오픈
+	 	 _parent : 부모창에서 오픈
+	 	 _top : 가장 상위 윈도우에서 오픈
+	  -->
+	  
+	  <a href="https://www.naver.com" target="_blank">네이버</a>
+	 
+	 
+	 <hr>
+	 <h2>이미지에 링크 걸기</h2>
+	 <a href="https://blog.naver.com/gazetfactory/222153309478" target="_blank">
+	 	<img alt="꽃사진" src="https://postfiles.pstatic.net/MjAyMDExMjRfMjE0/MDAxNjA2MjA0ODc0MTk3.sMkCAzVqpiRvWyLq3IEjZmxwtW-vcpXVolE5E5CV3FIg.a9kZ_qzJzpD5uvLdqNIDug2S32LwLKCDMpk50RvC6Eog.JPEG.gazetfactory/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8A%90%EB%8B%98%EB%91%98%EB%A6%AC_%ED%83%80%EC%9D%B4%ED%8B%80.jpg?type=w966">
+	 </a>
+	 
+	 <h2>한 페이지 내에서 점프하는 앵커 만들기</h2>
+	 <ul>
+	 	<li><a href="#content1">본문내용1</a></li>
+	 	<li><a href="#content2">본문내용2</a></li>
+	 	<li><a href="#content3">본문내용3</a></li>
+	 	<li><a href="#list_1">목차</a></li>
+	 </ul>
+	 
+	 <h3>본문 내용</h3>
+	 <img id="content1" src="sample/image/flower3.PNG" width="30%" height="300px"><hr>
+	 <img id="content2" src="sample/image/flower4.PNG" width="30%" height="300px"><hr>
+	 <img id="content3" src="sample/image/flower5.PNG" width="30%" height="300px">
+	 
+
+</body>
+</html>

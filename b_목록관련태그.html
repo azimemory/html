@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>목록관련태그</title>
+</head>
+<body>
+	<h1>순서가 상관 없는 목록 태그 ul </h1>
+	
+	<h2>화면 구현 수업 내용</h2>
+	<ul>
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>JavaScript</li>
+	</ul>
+	
+	<h1>순서가 정해진 목록 태그 ol</h1>
+	
+	<h2>화면 구현 수업 내용</h2>
+	<ol type="a">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>JavaScript</li>
+	</ol>
+	
+	<ol type="A">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>JavaScript</li>
+	</ol>
+		
+	<ol type="i">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>JavaScript</li>
+	</ol>
+	
+	<ol type="I">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>JavaScript</li>
+	</ol>
+		
+	<ol start="4" type="A">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>JavaScript</li>
+	</ol>
+		
+	<ol reversed>
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>JavaScript</li>
+	</ol>
+	
+	<h1>설명 목록 태그</h1>
+	<!-- 
+		설명목록 : <dl>
+		목록에 대한 제목 : <dt>
+		목록에 대한 설명 : <dd>
+	 -->
+	 
+	 <dl>
+	 	<dt>html</dt>
+	 	<dd>Hyper text Markup Language, 웹 콘텐츠의 의미와 구조를 정의할 때 사용한다.</dd>
+	 	<dt>css</dt>
+	 	<dd>웹페이지의 외형과 표현을 서술할 때 사용한다.</dd>
+	 </dl>
+
+	<!-- 태그는 중첩시켜서 사용이 가능 하다. -->
+	<h1>목록 중첩 시켜서 사용하기</h1>
+	<ul>
+		<li>프로그래밍언어</li>
+		<li>데이터베이스</li>
+		<li>화면구현
+			<dl>
+				<dt>html</dt>		
+				<dd>Hyper text Markup Language, 웹 콘텐츠의 의미와 구조를 정의할 때 사용한다.</dd>	
+				<dt>css</dt>
+				<dd>웹페이지의 외형과 표현을 서술할 때 사용한다.</dd>
+			</dl>
+		</li>
+	</ul>
+	
+	
+	<hr>
+	
+	
+	<ul>
+		<li>프로그래밍 언어
+			<ul>
+				<li><s>Java</s></li>
+			</ul>
+		</li>
+		<li>데이터베이스
+			<ul>
+				<li><s>Oracle</s></li>
+			</ul>
+		</li>
+		<li>화면 구현
+			<ol>
+				<li><mark>HTML5</mark></li>
+				<li>CSS5</li>
+				<li>JavaScript</li>
+				<li>JQuery</li>
+			</ol>
+		</li>
+		<li>서버 개발 기술
+			<ol type="i">
+				<li><s>JDBC</s></li>
+				<li>Servlet</li>
+				<li>JSP</li>
+				<li>AJAX</li>
+			</ol>
+		</li>
+		<li>프레임워크
+			<ol type="a">
+				<li><strong>Spring</strong></li>
+				<li>MyBatis</li>
+			</ol>
+		</li>
+	</ul>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
